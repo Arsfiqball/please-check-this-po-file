@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "please-check-this-po-file": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arsfiqball/please-check-this-po-file.git"
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/Arsfiqball/please-check-this-po-file#readme",
   "dependencies": {
+    "commander": "^2.9.0",
     "pofile": "^1.0.2",
     "request": "^2.75.0"
   }
