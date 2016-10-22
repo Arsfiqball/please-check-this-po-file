@@ -1,0 +1,28 @@
+{
+  "name": "please-check-this-po-file",
+  "version": "0.0.1",
+  "description": "A commandline tool to check grammatical errors in a .po file using languagetool.org public API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arsfiqball/please-check-this-po-file.git"
+  },
+  "keywords": [
+    "languagetool",
+    "spellchecker",
+    "commandline"
+  ],
+  "author": "Iqbal Mohammad Abdul Ghoni <iqballmags@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arsfiqball/please-check-this-po-file/issues"
+  },
+  "homepage": "https://github.com/Arsfiqball/please-check-this-po-file#readme",
+  "dependencies": {
+    "pofile": "^1.0.2",
+    "request": "^2.75.0"
+  }
+}
