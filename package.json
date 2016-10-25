@@ -1,6 +1,6 @@
 {
   "name": "please-check-this-po-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A commandline tool to check grammatical errors in a .po file using languagetool.org public API.",
   "main": "index.js",
   "scripts": {
