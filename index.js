@@ -7,6 +7,9 @@ var lang = "en-US";
 var text = "\n";
 
 function checkFile(file) {
+  console.log("Using language code: "+lang);
+  console.log("Loading po file: "+file);
+
   PO.load(file, function (err, po) {
     if (err) {
       console.log("Error on loading po file:");
@@ -14,6 +17,9 @@ function checkFile(file) {
 
       return err;
     }
+    console.log("Loaded.\n");
+
+    console.log("Preparing...\n");
 
     var i, j;
 
@@ -26,6 +32,8 @@ function checkFile(file) {
         }
       }
     }
+
+    console.log("Making request to languagetool...\n");
 
     request.post({
       url:'https://languagetool.org/api/v2/check',
@@ -42,6 +50,8 @@ function checkFile(file) {
 
         return err;
       }
+
+      console.log("Fetching possible bugs...\n");
 
       var words, i, j;
 
@@ -65,6 +75,8 @@ function checkFile(file) {
         }
         console.log(words+"\n");
       }
+
+      console.log("Total: "+i+" possible bugs (word inside curly brackets).");
     });
   });
 }
